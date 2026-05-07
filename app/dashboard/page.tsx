@@ -32,7 +32,7 @@ export default function AdminDashboard() {
     setLoginError('');
 
     try {
-      const res = await fetch('http://localhost:8000/admin/login', {
+      const res = await fetch('https://vbm-backend-api.onrender.com/admin/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password })
@@ -65,10 +65,10 @@ export default function AdminDashboard() {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const scholRes = await fetch('http://localhost:8000/scholarships/');
+      const scholRes = await fetch('https://vbm-backend-api.onrender.com/scholarships/');
       if (scholRes.ok) setScholarships(await scholRes.json());
 
-      const donRes = await fetch('http://localhost:8000/donations/');
+      const donRes = await fetch('https://vbm-backend-api.onrender.com/donations/');
       if (donRes.ok) setDonations(await donRes.json());
     } catch (error) {
       console.error("Failed to fetch data", error);

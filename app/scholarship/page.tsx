@@ -28,7 +28,7 @@ export default function ScholarshipPage() {
     setMessage({ text: '', type: '' });
 
     try {
-      const response = await fetch('http://localhost:8000/scholarships/', {
+      const response = await fetch('https://vbm-backend-api.onrender.com/scholarships/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

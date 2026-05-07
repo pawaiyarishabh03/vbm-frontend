@@ -25,7 +25,7 @@ export default function DonatePage() {
     setMessage({ text: '', type: '' });
 
     try {
-      const response = await fetch('http://localhost:8000/donations/', {
+      const response = await fetch('https://vbm-backend-api.onrender.com/donations/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
