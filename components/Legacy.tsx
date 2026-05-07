@@ -13,7 +13,7 @@ export default function Legacy() {
           {/* Actual Image */}
           <div className="relative h-80 md:h-[400px] w-full bg-gray-900 rounded-lg border border-gray-800 flex items-center justify-center overflow-hidden">
              <Image 
-                src="/legacy.png.jfif" 
+                src="/legacy.png" 
                 alt="वीरांगना बलिदान मेला ऐतिहासिक दृश्य" 
                 fill
                 className="object-cover rounded-lg opacity-90 group-hover:opacity-100 transition duration-500 hover:scale-105"
